@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORMS IN HTML </title>
 </head>
+
 <body>
-    
+    <form action="/action">
+        <!-- checkbox -->
+        <label for="age">I am 18+</label>
+        <input type="checkbox" name="age" id="age" value="age">
+        <br>
+
+        <!-- radio -->
+        <label for="fruits">Apple</label>
+        <input type="radio" value="apple" name="fruits" id="fruits">
+        <label for="fruits">grapes</label>
+        <input type="radio" value="grapes" name="fruits" id="fruits">
+        <label for="fruits">Mango</label>
+        <input type="radio" value="mango" name="fruits" id="fruits">
+        
+        <br>
+        <!-- dropdown -->
+         <select name="option" >
+            <option value="student">Student</option>
+            <option value="profession">Profession</option>
+         </select>
+
+         
+
+
+
+
+        <button type="submit">Submit</button>
+    </form>
 </body>
+
 </html>
