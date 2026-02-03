@@ -2,6 +2,7 @@
 // 8 types of data types 
 // JS is dynamically typed language.. 
 // that is we do not need to write any type of varibale 
+
 let msg='hello';
 msg=1.2;//lexical scope
 console.log(msg);
