@@ -1,4 +1,4 @@
-//Data types
+// Data types
 // 8 types of data types 
 // JS is dynamically typed language.. 
 // that is we do not need to write any type of varibale 
