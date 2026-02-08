@@ -42,6 +42,13 @@ console.log(+apple + +grapes)//5
 // 6.+
 // 7.-
 
+//Increment and decrement
+let counter=5
+console.log(counter);
+counter++
+console.log(counter)
+
+// console.log(5++) ---> this line will give you an error
 //increment /decrement operator 
 //Increment/decrement can only be applied to variables. Trying to use it on a value like 5++ will give an error.
 
