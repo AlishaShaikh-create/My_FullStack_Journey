@@ -12,4 +12,3 @@
 console.log("hello welcome to harkirat cohort")
 
 
-///
