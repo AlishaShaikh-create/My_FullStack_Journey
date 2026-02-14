@@ -1,4 +1,5 @@
 //operator in js
+
 /* 1.Arithmatic operator
 a+b;
 a,b is operand and + is operator
@@ -75,17 +76,20 @@ console.log('2'<1)//false '2' is converted to numbers then compared
 console.log(null > 0)//false
 console.log(null == 0)//false
 console.log(null >= 0)//true
+console.log(null==undefined)// true
+
+// while using the relational operator like < , > , <= or >= the null value get converted to zero. so using the equality operator null value is loosely equal to undefined.It does not get converted to zero it remails the same so when null==0 it gives us ouptut as false .
 
 //Logical operator
 // Truth Tables
 
 /**
  * Logical AND operator (&&)
- *  A   B   A && B
- *  0   0      0
- * 0    1      0
- * 1    0      0
- * 1    1      1
+ *  A    B   A && B
+ *  0    0      0
+ *  0    1      0
+ *  1    0      0
+ *  1    1      1
  * 
  * Logical OR operator (||)
  *  A   B   A || B
