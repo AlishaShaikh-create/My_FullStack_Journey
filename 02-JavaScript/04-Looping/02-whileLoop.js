@@ -31,4 +31,6 @@ console.log(k);
 // The condition check can be moved below the loop body using the do..while syntax:
 do{
     //this block always executes
-}while(condition)
+}while(condition){
+    
+}

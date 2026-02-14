@@ -37,6 +37,38 @@ for (; i < 3; i++) { // no need for "begin"
 //Break
 //To make an “infinite” loop, usually the while(true) construct is used. Such a loop, just like any other, can be stopped with the break directive.
 
+// -> if the break statement will only execute for the nearest loop
+// Example:
+// while(true){
+
+//   for(let i=0;i<=10;i++){
+
+//       if(i==3){
+//         break; -> this break will only work for the for looop so it will stop execution at 2 but the while loop will still be in the state of infinity .. 
+//       }
+//   }
+// }
+
+// while(true)
+//      |-> for 
+//            |-> break(will only work for for loop)
+
+// to resolve this issue we can use the flag
+let flag=false;
+while(!flag){
+    for(let i=0;i<=10;i++){
+       
+        if(i==5){
+           flag=true;
+           break 
+        }
+        console.log(i)
+
+    }
+}
+
+
+
 //Continue
 
 //If we don’t want to do anything in the current iteration and would like to forward to the next one, we can use the continue directive.
@@ -44,3 +76,15 @@ for (; i < 3; i++) { // no need for "begin"
 //labels in the nested loop
 
 // https://javascript.info/while-for
+
+outerloop:
+for(let i=0;i<=10;i++){
+  for(let j =0; j<=10;j++)
+  {
+    console.log(`${i},${j}`)
+    if(j==3){
+      break outerloop
+    }
+  }
+  
+}

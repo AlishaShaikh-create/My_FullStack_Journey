@@ -1,8 +1,5 @@
-// Operators
-console.log("Appple"+" "+"banana")
-console.log(+true)
-console.log(+"")
-console.log(null > 0)
-console.log(null==0)
-console.log(null>=0)
-console.log(null==undefined)
+let i=3
+while(i){
+    console.log(i)
+    i--
+}
