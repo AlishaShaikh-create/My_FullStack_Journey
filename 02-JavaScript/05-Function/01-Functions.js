@@ -59,7 +59,7 @@ roles();
  */
 function isEven(n)
 {
-    n=read.question("Enter the number:");
+    n=read.questionInt("Enter the number:");
     if(n%2===0)
     {
         return true;
