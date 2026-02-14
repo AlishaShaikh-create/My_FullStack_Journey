@@ -87,7 +87,7 @@ function random(name,text=anotherFnc())
 }
 function anotherFnc()
 {
-    console.log("hello");
+    return "hello"; // You cannot write the console.log() in this because u need to return the value to the text so if u write the console.log() it will give value as undefined
 }
 random("alis");
 

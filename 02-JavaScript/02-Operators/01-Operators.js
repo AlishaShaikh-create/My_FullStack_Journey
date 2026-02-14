@@ -143,3 +143,5 @@ console.log('OR');
 
 console.log("NOT");
 console.log(!false);
+
+// BitWise operator:
