@@ -11,7 +11,7 @@ console.log(1/0);//Infinity
 console.log(Infinity);
 console.log(typeof(Infinity)) // output : typeof(infinity) is number
 
-console.log(-1/0);//-Infinity
+console.log(-1/0);//-Infinity   
 
 console.log( "not a number" / 2 ); // NaN, such division is erroneous
 

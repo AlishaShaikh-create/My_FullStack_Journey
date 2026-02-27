@@ -77,6 +77,7 @@ console.log(null > 0)//false
 console.log(null == 0)//false
 console.log(null >= 0)//true
 console.log(null==undefined)// true
+console.log(null<=0)// true
 
 // while using the relational operator like < , > , <= or >= the null value get converted to zero. so using the equality operator null value is loosely equal to undefined.It does not get converted to zero it remails the same so when null==0 it gives us ouptut as false .
 
@@ -145,3 +146,5 @@ console.log("NOT");
 console.log(!false);
 
 // BitWise operator:
+
+
