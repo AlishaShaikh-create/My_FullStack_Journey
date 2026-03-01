@@ -1,7 +1,13 @@
-let arr=['alisha', 12 , "tohid", true]
-console.log(arr.length)
-console.log(arr[0])
-console.log(arr[3])
-console.log(arr[arr.length-1]);
-console.log(arr[arr.length-2])
-console.log(arr.at(-1))
+let arr=[10,20,30]
+for(let i=0;i<arr.length;i++){
+    console.log(arr[i])
+}
+
+
+let num=[[10,20,30],[40,50],[60,70]];
+for(let i=0;i<num.length;i++){
+    for(let j=0;j<num[i].length;j++)
+    {
+        console.log(num[i][j])
+    }
+}

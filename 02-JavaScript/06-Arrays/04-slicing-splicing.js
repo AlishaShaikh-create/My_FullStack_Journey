@@ -1,4 +1,5 @@
 //SLICE IN ARRAY:
+
 //The slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
 
 
@@ -22,7 +23,7 @@ console.log(animals.slice(2, -1));
 console.log(animals.slice());
 // Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
 
-console.log(animals.slice(-1));
+console.log(animals.slice(-1)); //  [ 'elephant' ]
 
 const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 const citrus = fruits.slice(1, 3);
@@ -43,3 +44,5 @@ months.splice(4, 1, "May");
 // Replaces 1 element at index 4
 console.log(months);
 // Expected output: Array ["Jan", "Feb", "March", "April", "May"]
+
+
