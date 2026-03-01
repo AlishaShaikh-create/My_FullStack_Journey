@@ -86,3 +86,32 @@ console.log(score.rohit);
 console.log(score.virat[3]);
 //OUTPUT:
 //100
+
+// indexOf: To return the index of the particular element
+let name=['alisha',1,true]
+console.log(name.indexOf(1)) 
+// Output:1
+console.log(name.indexOf(true))
+//Output:2
+
+// concat : To join the 2 array
+let num1=[1,2,3]
+let num2=[10,20,30]
+let num3=num1.concat(num2)
+console.log(num3) // [ 1, 2, 3, 10, 20, 30 ] 
+
+// reverse:To reverse the element of the array
+console.log(num1.reverse()) // [ 3, 2, 1 ]
+
+// sort: To sort the character or string in the alphabetical order
+
+// The sort method is only used to sort the letter or character it does not sort the number 
+let str=['c','a','d','z','e']
+console.log(str.sort()) // [ 'a', 'c', 'd', 'e', 'z' ] 
+console.log(num3.sort())  // [ 1, 10, 2, 20, 3, 30 ] 
+
+// includes : this is used to check if the element is present in the array or not ; if persent -> return true or else return false 
+let ali=['alisha','john','perter']
+console.log(ali.includes('alisha')) // true
+console.log(ali.includes("tohid")) // false 
+
