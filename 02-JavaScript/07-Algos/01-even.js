@@ -12,4 +12,14 @@ function isEven(){
 
 isEven(4)
 
-// Function to print 
+// Function to print even numbers from start and end
+
+function Evenseries(start,end){
+    for(let i=start;i<=end;i++){
+        if(i%2==0){
+            console.log(i)
+        }
+    }
+}
+
+Evenseries(100,110)
