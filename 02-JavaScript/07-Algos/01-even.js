@@ -23,3 +23,24 @@ function Evenseries(start,end){
 }
 
 Evenseries(100,110)
+
+// function to add 2 numbers
+function sum(a,b){
+    console.log(a+b);
+}
+
+sum(2,3)
+
+// check if the array has even numbers 
+// and return a new array with array of even numbers.
+const arr = [2, 4, 77, 66, 13, 17, 19, 33, 45, 67];
+let newarr=[]
+function even(arr){
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]%2==0){
+           newarr.push(arr[i])
+        }
+    }
+    return newarr;
+}
+console.log(even(arr))
