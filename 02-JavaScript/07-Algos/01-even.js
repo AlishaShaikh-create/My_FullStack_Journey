@@ -44,3 +44,18 @@ function even(arr){
     return newarr;
 }
 console.log(even(arr))
+
+
+// only a single digit. Push it into a new array and return.
+
+const arr1 = [2, 4, 77, 66, 13, 17, 19, 33, 45, 67,9,23,2,5,67];
+const newarr1=[]
+function singleDigit(arr1){
+    for(let i=0;i<arr1.length;i++){
+        if(arr1<10){
+        newarr1.push(arr1[i])
+        }
+    }
+    console.log(newarr1)
+}
+
