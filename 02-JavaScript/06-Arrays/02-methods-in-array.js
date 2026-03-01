@@ -2,7 +2,10 @@
 //  push/pop
 //  shift/unshift
 
-//push appends an element to the end.
+//push : add the element at the end of the array
+// pop : remove the element from the start and return it
+//unshift : add the element to the start of the array
+// shift : remove the element from the start and return it
 
 //shift get an element from the beginning, advancing the queue, so that the 2nd element becomes the 1st.
 

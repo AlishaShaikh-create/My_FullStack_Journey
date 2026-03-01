@@ -1,49 +1,7 @@
-
-
-// Reverse the number
-
-let num=12345
-// console.log(num%10)
-// let digit=Math.floor(num/10)
-// console.log(digit)
-
-let digit=""
-
-while(num>0){
-    let value=num%10 
-    num = Math.floor(num/10)
-    digit+=value
-
-}
-console.log(digit)
-
-
-
-// primenumber checker
-let n=8
-let count=0
-for(let i=1;i<=n;i++){
-    if(n%i==0){
-        count+=1
-    }
-}
- if(count==2){
-        console.log("prime")
-    }else{
-        console.log("not prime")
-    }
-
-
-let name=function(){
-    console.log("Hello")
-}    
-
-name()
-
-// copying one function to another
-function greet(){
-    return "Alisha"
-}
-let hi=greet
-console.log(hi())
-console.log(greet())
+let arr=['alisha', 12 , "tohid", true]
+console.log(arr.length)
+console.log(arr[0])
+console.log(arr[3])
+console.log(arr[arr.length-1]);
+console.log(arr[arr.length-2])
+console.log(arr.at(-1))
