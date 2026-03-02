@@ -59,3 +59,31 @@ function singleDigit(arr1){
     console.log(newarr1)
 }
 
+// Write an algorithm to find if a given array has any primes numbers
+//  and store it a new array.
+
+const arr2 = [2, 4, 77, 66, 13, 17, 19, 33, 45, 67,9];
+function isPrime(num){
+    let count=0
+    for(let i=2;i<num;i++){
+        if(num%i==0){
+            count++
+        }
+    }
+    return count==0? true:false
+}
+
+console.log(isPrime(78))
+
+function isPrimeNumberInArray(arr2){
+    let new_arr=[]
+    for(let i=0;i<arr2.length;i++){
+         if(isPrime(arr2[i])){
+           new_arr.push(arr2[i])
+         }
+    }
+    return new_arr
+}
+
+console.log("The element in the array with out prime number")
+console.log(isPrimeNumberInArray(arr2))
