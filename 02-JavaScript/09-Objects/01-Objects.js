@@ -64,3 +64,4 @@ console.log(college)
 
 // output:{ name: 'xyz college ', entablished: 1990, principle: 'doreamon' }
 
+
