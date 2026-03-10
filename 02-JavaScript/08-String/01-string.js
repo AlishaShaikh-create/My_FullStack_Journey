@@ -32,3 +32,8 @@ console.log(str.replace('love','teach')) // I teach coding
 // repeat
 str="mango"
 console.log(str.repeat(3)) //mangomangomango
+
+// slicing 
+let str1="Alisha"
+console.log(str1.length)
+console.log(str1.slice(1,5))

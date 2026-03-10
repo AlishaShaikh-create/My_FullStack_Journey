@@ -8,3 +8,4 @@ let fruits=['apple','banana','grapes']
 for(let fruit of fruits){
     console.log(fruit)
 }
+
