@@ -3,6 +3,7 @@
 
 // A function which is passed in other function as an argument is called as call back function
 
+// API CALLS
 
 // SYNTAX :
 // setTimeout(function , timeout)
