@@ -20,3 +20,15 @@ const hello=()=>{
     console.log("Hello World")
 }
 hello()
+
+
+
+let arr=[1,2,3]
+const arrAvd=(arr)=>{
+    let sum=0
+    for(let i=0;i<arr.length;i++){
+        sum=sum+arr[i]
+    }
+    return sum/arr.length
+}
+console.log(arrAvd(arr))
