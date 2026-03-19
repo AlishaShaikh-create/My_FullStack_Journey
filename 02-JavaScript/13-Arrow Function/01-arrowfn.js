@@ -16,6 +16,7 @@ const cube=(n)=>{
 let c=cube(3)
 console.log(c)
 
+
 const hello=()=>{
     console.log("Hello World")
 }

@@ -1,13 +1,16 @@
-let arr=[10,20,30]
-for(let i=0;i<arr.length;i++){
-    console.log(arr[i])
-}
+// Arrow function
+let arr = [1,2,3,4,5,6,7,8,9,10]
+arr.forEach( (nums) =>{
+    console.log(nums)
+})
 
+arr.map( (ele) => {
+    return ele *2
+})
+console.log(arr)
 
-let num=[[10,20,30],[40,50],[60,70]];
-for(let i=0;i<num.length;i++){
-    for(let j=0;j<num[i].length;j++)
-    {
-        console.log(num[i][j])
-    }
-}
+let newarr=arr.filter( (ele)=>{
+   return ele%2!==0
+})
+console.log(newarr)
+

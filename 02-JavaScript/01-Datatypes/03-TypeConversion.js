@@ -1,4 +1,4 @@
-// Type COnversion sometimes happen automatically
+// Type Conversion sometimes happen automatically
 
 // Most of the time operator and function automatically convert the given value to the right type
 

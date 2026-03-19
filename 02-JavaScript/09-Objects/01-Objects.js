@@ -30,6 +30,7 @@ const post={
     repost:5
 }
 
+
 console.log(post)
 let prop="repost"
 console.log(post[prop]) // 5
