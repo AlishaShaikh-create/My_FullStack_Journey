@@ -1,16 +1,22 @@
-// Arrow function
-let arr = [1,2,3,4,5,6,7,8,9,10]
-arr.forEach( (nums) =>{
-    console.log(nums)
-})
+let todo=[]
+function addtask(task){
+    todo.push(task)
+    
+}
 
-arr.map( (ele) => {
-    return ele *2
-})
-console.log(arr)
 
-let newarr=arr.filter( (ele)=>{
-   return ele%2!==0
-})
-console.log(newarr)
+addtask('eat')
 
+function deleteTask(index){
+    todo.splice(index,1)
+    console.log(todo)
+}
+
+
+function showTodo(){
+    for(let i=0 ;i<todo.length;i++){
+        console.log(todo[i])
+    }
+}
+
+showTodo()
