@@ -1,23 +1,12 @@
-let todo=[]
-function addtask(task){
-    todo.push(task)
-    
-}
+let nums = [10,21,30]
+let result = nums.every((ele)=>ele%10==0)
+console.log(result)
 
-
-addtask('eat')
-
-function deleteTask(index){
-    todo.splice(index,1)
-    console.log(todo)
-}
-
-
-function showTodo(){
-    for(let i=0 ;i<todo.length;i++){
-        console.log(todo[i])
+let min=nums.reduce((min,ele)=>{
+    if(ele>min){
+        return min
+    }else{
+        return ele
     }
-}
-
-
-showTodo()
+})
+console.log(min)

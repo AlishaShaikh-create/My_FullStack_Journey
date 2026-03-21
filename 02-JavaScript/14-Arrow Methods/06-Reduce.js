@@ -10,3 +10,16 @@ console.log(result)
 let multiply = arr.reduce((acc, ele)=>(acc*ele),1)
 console.log(multiply)
 
+// finding the maximum of the array using the reduce function
+
+let nums = [-1,-2,-2]
+let res = nums.reduce((max ,ele)=>{
+    if(ele > max){
+        return ele
+    }else{
+        return max
+    }
+})
+
+console.log(res)
+
