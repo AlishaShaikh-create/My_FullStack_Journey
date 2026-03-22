@@ -1,12 +1,19 @@
-let nums = [10,21,30]
-let result = nums.every((ele)=>ele%10==0)
-console.log(result)
+let arr=[1,2,3,4,5,6]
+let square = arr.map((ele)=>ele*ele)
+let sum = square.reduce((acc,ele)=>acc+ele)
+let avg=sum/arr.length
+console.log(avg)
 
-let min=nums.reduce((min,ele)=>{
-    if(ele>min){
-        return min
-    }else{
-        return ele
-    }
-})
-console.log(min)
+let plus5=arr.map((ele)=>ele+5)
+console.log(plus5)
+
+let str=['alisha','tohid']
+let upper=str.map((ele)=>ele.toUpperCase())
+console.log(upper)
+
+function doubleAndReturnArgs(...args){
+    let newarr=args.map((ele)=>ele*2)
+    let result = [...args,...newarr]
+    console.log(result)
+}
+doubleAndReturnArgs(1,2,3,4)
