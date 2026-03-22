@@ -10,7 +10,8 @@
     <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci sunt quidem tempora. Architecto voluptatum sit dicta consequatur debitis at pariatur molestias asperiores consectetur iusto, voluptas aut laboriosam, incidunt molestiae.</p>
     <p class="description"> Hello this is Alisha</p>
     <p class="description">Practicing the js concept</p>
-
+    
+    <article> bull shit</article>
 
     <script >
         let main=document.getElementById('imp')
@@ -18,8 +19,18 @@
         console.dir(main)
         console.log(main.tagName)
         main.innerText="hello Alisha"
-
         
+        let cs=document.getElementsByClassName("description")
+        console.dir(cs)
+        console.dir(cs[0].innerText)
+
+        for(let i =0;i<cs.length;i++){
+            console.dir(cs[i].innerText)
+        }
+        
+        let tag=document.getElementsByTagName("article")
+        console.dir(tag)
+        console.log(tag.length)
     </script>
 </body>
 </html>
