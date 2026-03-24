@@ -3,14 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Query selector</title>
 </head>
 <body>
-    
+    <h1 style="color:red">Spider Man</h1>
+    <h1>Iron Man</h1>
+       
+    <!-- Text manipulation -->
+     <div id ='main'>Hello <span id ='hidden' style="display:none">Hidden Text </span> World</div>
 
-    
+    <div>
+        <ul>
+            <li >
+                <a href="apple.com"> apple</a>
+            </li>
+            
+            <li>
+                <a href="google.com">Google</a>
+            </li>
+            <li >
+                <a href="youtube.com">Youtube</a>
+            </li>
+        </ul>
+    </div>
+
+
     <script>
 
+       let select = document.querySelector('h1')
+       console.dir(select)
+
+       select=document.querySelectorAll("div a")
+       for(let i =0; i<select.length;i++){
+        console.log(select[i].innerText)
+       }
+
+       let para = document.querySelector('#main')
+       console.dir(para)
+       console.dir(para.innerHTML)
+       console.dir(para.innerText)
+       console.log(para.textContent)
+       para.innerHTML="<h1>Alisha</h1>"
+ 
     </script>
 </body>
 </html>

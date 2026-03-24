@@ -17,4 +17,8 @@ document.querySelector('#myid') # select the first element with id = myid
 
 document.querySelector('.myclass') # select the first element with class = myclass
 
-document,querySelectorAll("p") select all the p elements
+document.querySelectorAll("p") select all the p elements
+
+// MANIPULATING THE ELEMENT 
+
+innerText
