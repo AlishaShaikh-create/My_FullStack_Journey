@@ -27,5 +27,7 @@ innerHTML : give all the html markup
 
 textContent: give us the hidden text as well
 
- document.getAttribute('id')
- document.setAttribute('id','value to set)
+// getters and setters method
+document.getAttribute('id')
+document.setAttribute('id','value to set)
+

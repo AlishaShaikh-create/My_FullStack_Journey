@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Query selector</title>
 </head>
+
 <body>
     <h1 style="color:red">Spider Man</h1>
     <h1>Iron Man</h1>
-       
+
+
+    <h2 class="rose red">Roses are Red</h2>
+
+    <h3>HEADING 3</h3>
+
+
     <!-- Text manipulation -->
-     <div id ='main'>Hello <span id ='hidden' style="display:none">Hidden Text </span> World</div>
+    <div id='main'>Hello <span id='hidden' style="display:none">Hidden Text </span> World</div>
 
     <div>
         <ul>
-            <li >
+            <li>
                 <a href="apple.com"> apple</a>
             </li>
-            
+
             <li>
                 <a href="google.com">Google</a>
             </li>
-            <li >
+            <li>
                 <a href="youtube.com">Youtube</a>
             </li>
         </ul>
@@ -29,50 +37,110 @@
 
 
     <script>
-       
-       // To select the element using the querySelector
-       let select = document.querySelector('h1')
-       console.dir(select)
 
-       select=document.querySelectorAll("div a")
-       for(let i =0; i<select.length;i++){
-        console.log(select[i].innerText)
-       }
+        // To select the element using the querySelector
+        let select = document.querySelector('h1')
+        console.dir(select)
 
-       // Manipulatin the text element 
-       let para = document.querySelector('#main')
-       console.dir(para)
-       console.dir(para.innerHTML)
-       console.dir(para.innerText)
-       console.log(para.textContent)
-       para.innerHTML="<h1>Alisha</h1>"
+        select = document.querySelectorAll("div a")
+        for (let i = 0; i < select.length; i++) {
+            console.log(select[i].innerText)
+        }
 
-       // Getter and Setter method 
-       let link = document.getElementById('main')
-       link.setAttribute('main', 'alisha')
-       console.log(link)
+        // Manipulatin the text element 
+        let para = document.querySelector('#main')
+        console.dir(para)
+        console.dir(para.innerHTML)
+        console.dir(para.innerText)
+        console.log(para.textContent)
+        para.innerHTML = "<h1>Alisha</h1>"
 
-
-      // style property 
-      // obj.style
-      // obj.style is used to set the inline style
-      // it only shows the style if its inline
-      // not frequently recommanded 
-
-       let heading = document.querySelector('h1')
-       console.dir(heading.style['color'])
-       heading.style.color= "yellow"
+        // Getter and Setter method 
+        let link = document.getElementById('main')
+        link.setAttribute('main', 'alisha')
+        console.log(link)
 
 
-       let links = document.querySelectorAll('div a')
-       for(link of links){
-        link.style.backgroundColor="blue"
-        link.style.color='white'
-       }
+        // style property 
+        // obj.style
+        // obj.style is used to set the inline style
+        // it only shows the style if its inline
+        // not frequently recommanded 
+
+        let heading = document.querySelector('h1')
+        console.dir(heading.style['color'])
+        heading.style.color = "yellow"
+
+
+        let links = document.querySelectorAll('div a')
+        for (link of links) {
+            link.style.backgroundColor = "blue"
+            link.style.color = 'white'
+        }
+
+        // classList
+        let heading2 = document.querySelector('h2')
+        console.log(heading2)
+        console.log(heading2.classList)
+
+        let heading3 = document.querySelector('h3')
+        console.dir(heading3.classList) // here we expect the output to be null but still we get the output as green
+        heading3.classList.add('green')
+        console.dir(heading3.classList) // output green
+
+        // this issue is because of the  "The console shows live objects, not their past value."
+
+        // how to solve this issue :
+        // make a copy by 
+        // let element =[...heading3.classList]
+
+        let obj = {
+            name: "Alisha"
+        }
+        console.log(obj)
+        obj.name = "tohid"
+        console.log(obj)
+
+
+        // classList.add() -> to add the class to the particular element
+        console.log(heading3.classList)
+        heading3.classList.add("color")
+        console.log(heading3.classList)
+
+        //classList.remove() -> to remove the classlist
+        heading3.classList.remove("color")
+        console.log(heading3.classList)
+
+        // classList.contains(): -> 
+        // return true if present
+        // else return false
+        console.log(heading3.classList.contains('color'))
+
+        console.log(heading3.classList.contains('green'))
+
+        // classList.toggle(): add the element if not present and return true
+        // remove the element if present and return false
+        console.log(heading3.classList.toggle('color'))
+        console.log(heading3.classList)
 
 
 
- 
+        
+
+
+    
+
+        
+
+
+
+
+
+
+
+
+
     </script>
 </body>
+
 </html>
