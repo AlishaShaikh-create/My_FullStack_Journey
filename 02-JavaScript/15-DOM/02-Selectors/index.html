@@ -29,7 +29,8 @@
 
 
     <script>
-
+       
+       // To select the element using the querySelector
        let select = document.querySelector('h1')
        console.dir(select)
 
@@ -38,12 +39,39 @@
         console.log(select[i].innerText)
        }
 
+       // Manipulatin the text element 
        let para = document.querySelector('#main')
        console.dir(para)
        console.dir(para.innerHTML)
        console.dir(para.innerText)
        console.log(para.textContent)
        para.innerHTML="<h1>Alisha</h1>"
+
+       // Getter and Setter method 
+       let link = document.getElementById('main')
+       link.setAttribute('main', 'alisha')
+       console.log(link)
+
+
+      // style property 
+      // obj.style
+      // obj.style is used to set the inline style
+      // it only shows the style if its inline
+      // not frequently recommanded 
+
+       let heading = document.querySelector('h1')
+       console.dir(heading.style['color'])
+       heading.style.color= "yellow"
+
+
+       let links = document.querySelectorAll('div a')
+       for(link of links){
+        link.style.backgroundColor="blue"
+        link.style.color='white'
+       }
+
+
+
  
     </script>
 </body>

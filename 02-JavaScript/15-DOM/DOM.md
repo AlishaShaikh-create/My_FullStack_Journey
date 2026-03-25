@@ -21,4 +21,11 @@ document.querySelectorAll("p") select all the p elements
 
 // MANIPULATING THE ELEMENT 
 
-innerText
+innerText : we can only the text of the element not any hidden content
+
+innerHTML : give all the html markup
+
+textContent: give us the hidden text as well
+
+ document.getAttribute('id')
+ document.setAttribute('id','value to set)
