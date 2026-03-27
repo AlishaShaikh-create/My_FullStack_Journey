@@ -10,10 +10,7 @@
 <body>
     <h1 style="color:red">Spider Man</h1>
     <h1>Iron Man</h1>
-
-
     <h2 class="rose red">Roses are Red</h2>
-
     <h3>HEADING 3</h3>
 
 
@@ -34,7 +31,17 @@
             </li>
         </ul>
     </div>
+    <hr>
 
+    <h1 style="color:red ">Navigation property</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in, temporibus, eum tempora eos numquam optio aspernatur culpa odio a vel impedit provident omnis nostrum vero ducimus explicabo atque corporis.</p>
+      <div>
+        <ol>
+            <li>Apple</li>
+            <li>Grapes</li>
+            <li>Mango</li>
+        </ol>
+      </div>
 
     <script>
 
@@ -46,6 +53,7 @@
         for (let i = 0; i < select.length; i++) {
             console.log(select[i].innerText)
         }
+
 
         // Manipulatin the text element 
         let para = document.querySelector('#main')
@@ -123,16 +131,17 @@
         console.log(heading3.classList.toggle('color'))
         console.log(heading3.classList)
 
+        // Navigation of the element
+        let ol=document.querySelector('ol')
+        console.dir(ol.parentElement)  // div 
+        console.dir(ol.children)
 
+        console.log(ol.childElementCount) // 3
 
-    
+        console.dir(ol.previousElementSibling) //null
 
-        
-
-
-
-
-
+        console.log(ol.children[1].previousElementSibling) // Apple
+        console.log(ol.children[1].nextElementSibling) // Mango
 
 
 
