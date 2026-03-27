@@ -52,6 +52,13 @@ element.parentElement -> gives the just above parent elemnt
 element.children -> gives the child element means the element that comes inside that particular element
 element.previousElementSibling / element.nextElementSibline
 
+// Create the Element 
+document.createElement('p')
+body.appendChild('element')
+body.append('element')
+body.prepend('element')
+body.inserAdjuscentElement(position,value)
+position: beforebegin,beforeend,afterbegin,afterend
 
 
 
