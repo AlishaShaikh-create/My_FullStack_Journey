@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Element</title>
+</head>
+<body>
+    
+    <script>
+        // Creating the element 
+        let h1=document.createElement('h1')
+        console.dir(h1)
+        h1.innerText = "Hello World"
+        let body = document.querySelector('body')
+
+        // to append the element to the parent 
+        body.appendChild(h1)
+
+        let btn = document.createElement('button')
+        btn.innerText = "submit"
+        body.appendChild(btn)
+        
+        // append 
+        h1.append(" new Heading")
+
+    </script>
+</body>
+</html>
