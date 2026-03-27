@@ -60,6 +60,13 @@ body.prepend('element')
 body.inserAdjuscentElement(position,value)
 position: beforebegin,beforeend,afterbegin,afterend
 
+// Removing Element
+document.remove(element)
+document.removeChile(element)
+
+// DOM EVENTS:
+events are signals that something has occured.(user inputs/actions)
+
 
 
 
