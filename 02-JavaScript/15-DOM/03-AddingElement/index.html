@@ -8,21 +8,36 @@
 <body>
     
     <script>
+        // append , appendChild -> add the element at the last
+
         // Creating the element 
         let h1=document.createElement('h1')
         console.dir(h1)
         h1.innerText = "Hello World"
         let body = document.querySelector('body')
 
-        // to append the element to the parent 
+        // appendChild -> element/text node 
         body.appendChild(h1)
 
         let btn = document.createElement('button')
         btn.innerText = "submit"
         body.appendChild(btn)
         
-        // append 
+        // append  -> string / text
         h1.append(" new Heading")
+        h1.append(btn)
+
+        //prepend(element) -> add the element at the first
+
+        let para =document.createElement('p')
+        para.textContent = "i am paragraph"
+        body.prepend(para)
+
+        // insertAdjascentElement(position,element)
+
+        let h6 = document.createElement("h6")
+        h6.innerText = "heading 6"
+        h1.insertAdjacentElement('beforebegin',h6)
 
     </script>
 </body>
