@@ -70,6 +70,8 @@ events are signals that something has occured.(user inputs/actions)
 onclick ,onmouseeter
 the main drawback is that we can execute only the single function through this cannot execute the multiple function that the reason we use addEventListener
 
+syntax : addEventListener(event , callback)
+
 
 
 
