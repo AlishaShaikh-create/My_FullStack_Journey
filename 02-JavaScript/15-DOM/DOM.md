@@ -86,7 +86,10 @@ keyboard event
   -> key : value visible on the screen
   -> code :what is the code of the particular character
 
-  
+// FORM EVENTS
+event.preventDefault()
+
+input.value -> to get the value of the input
 
 
 
