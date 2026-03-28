@@ -74,7 +74,19 @@ syntax : addEventListener(event , callback)
 
 eventlistener can be used for the other element not only just for the element
 
+
 'this' in addEventListener refer to the element which is calling
+
+// KEYBOARD EVENTS
+
+event is the default argument that we can use
+input.addEventListener('keyup',callback)
+
+keyboard event
+  -> key : value visible on the screen
+  -> code :what is the code of the particular character
+
+  
 
 
 

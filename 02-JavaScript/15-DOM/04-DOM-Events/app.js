@@ -67,7 +67,22 @@ h3.addEventListener("click",changeColor)
 button.addEventListener("click",changeColor)
 
 
-//keyboard Events
+// event argument
+
+button.addEventListener("click",function(event){
+    console.dir(event) // pointerEvent
+})
+
+// keyboard Event
+let input = document.querySelector('input')
+let b = document.querySelector('.submit')
+input.addEventListener("keydown",(event)=>{
+    console.dir(event)
+    console.log("key was pressed")
+    console.log("key=",event.key)
+    console.log("code=",event.code)
+})
+
 
 
 
