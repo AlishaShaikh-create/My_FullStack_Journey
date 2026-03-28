@@ -72,6 +72,9 @@ the main drawback is that we can execute only the single function through this c
 
 syntax : addEventListener(event , callback)
 
+eventlistener can be used for the other element not only just for the element
+
+'this' in addEventListener refer to the element which is calling
 
 
 

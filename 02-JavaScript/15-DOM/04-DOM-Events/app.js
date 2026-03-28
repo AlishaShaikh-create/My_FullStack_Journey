@@ -51,4 +51,23 @@ for(let btn of btns){
 }
 
 
+// this keyword in js
+let h3= document.querySelector('h3')
+let p = document.querySelector('#para')
+let button=document.querySelector('#btn')
+
+
+function changeColor(){
+    console.log(this.innerText)
+    this.style.color='blue'
+}
+
+p.addEventListener("click",changeColor)
+h3.addEventListener("click",changeColor)
+button.addEventListener("click",changeColor)
+
+
+//keyboard Events
+
+
 
