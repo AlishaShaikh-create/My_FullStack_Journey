@@ -26,3 +26,4 @@ input.addEventListener('input',(e)=>{
 input.addEventListener('change',(e)=>{
     console.log('change value',e.target.value)
 })
+

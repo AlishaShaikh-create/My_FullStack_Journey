@@ -32,8 +32,8 @@ textContent: give us the hidden text as well
 
 
 // getters and setters method
-document.getAttribute('id')
-document.setAttribute('id','value to set)
+element.getAttribute('id')
+element.setAttribute('id','value to set)
 
 
 
@@ -62,7 +62,7 @@ position: beforebegin,beforeend,afterbegin,afterend
 
 // Removing Element
 document.remove(element)
-document.removeChile(element)
+document.removeChild(element)
 
 // DOM EVENTS:
 events are signals that something has occured.(user inputs/actions)
