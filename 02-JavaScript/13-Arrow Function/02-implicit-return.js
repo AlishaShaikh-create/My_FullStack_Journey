@@ -1,6 +1,6 @@
 // Implicit return 
 
-// SYNTAX : It implicity return we do not have to write the return statement
+// SYNTAX : It implicit return we do not have to write the return statement
 
 
 // const func=(arg1,arg2)=> (

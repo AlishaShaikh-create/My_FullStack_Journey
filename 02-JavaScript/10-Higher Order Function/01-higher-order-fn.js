@@ -6,10 +6,12 @@ function greet(name){
     return "hello "+ name;
 }
 
+
 function processUserr(callback){
     let name='Shaikh Alisha'
     return callback(name)
 }
+
 
 console.log(processUserr(greet))
 

@@ -10,6 +10,7 @@ sayHello();
 console.log("----------------------------------------------------------");
 
 //Function expression syntax
+
 //Here we immediately assign it to the variable, so the meaning of these code samples is the same: “create a function and put it into the variable name ”.
 
 let name=function()

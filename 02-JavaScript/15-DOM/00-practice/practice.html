@@ -3,47 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice </title>
-    <style>
-       .main{
-        border:2px solid black;
-        background-color: pink;
-        height: 500px;
-        width:100%
-       }
-    </style>
+    <title>java Script Practice</title>
 </head>
 <body>
+    <h1 id = title> Hello World</h1>
 
-
-    
 </body>
 <script>
-        let body = document.querySelector('body')
-        let h1=document.createElement('h1')
-        h1.innerText = "I am div"
-
-        let p = document.createElement('p')
-        p.innerText="me too"
-
-        let para = document.createElement('p')
-        console.dir(para)
-        para.innerText = 'Hey Im red'
-        para.style.color='red'
-        body.appendChild(para)
-
-        let h3 = document.createElement('h3')
-        h3.innerText = "I'm a blue h3!"
-        h3.style.color='blue'
-        body.append(h3)
-        
-        let div = document.createElement('div')
-        body.appendChild(div)
-        div.classList.add('main')
-        console.dir(div.classList)
-        div.classList.add('main')
-        div.appendChild(h1)
-        div.appendChild(p)
-
-    </script>
+    let heading = document.getElementById("title")
+    console.log(heading)
+</script>
 </html>
