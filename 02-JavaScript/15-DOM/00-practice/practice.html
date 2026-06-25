@@ -4,13 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>java Script Practice</title>
+    <style>
+        #box{
+            height:100px;
+            width: 50px;
+            border : 2px solid black
+
+        }
+    </style>
 </head>
 <body>
-    <h1 id = title> Hello World</h1>
-
+    <div id = "parent">
+        <button id ="click">Submit</button>
+    </div>
 </body>
 <script>
-    let heading = document.getElementById("title")
-    console.log(heading)
+
+let div = document.getElementById("parent")
+let btn = document.getElementById("click")
+
+btn.addEventListener("click",(event)=>{
+    event.stopPropagation()
+    console.log("button was clicked")
+})
+
+div.addEventListener("click",()=>{
+    console.log("div was clicked")
+})
+
 </script>
 </html>
+
+
