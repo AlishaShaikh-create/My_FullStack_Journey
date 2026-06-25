@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#increment {
+    background-color: #4caf50;
+    color: white;
+}
+
+#decrement {
+    background-color: #f44336;
+    color: white;
+}
+
+#reset {
+    background-color: #2196f3;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+         <h1>0</h1>
+
+         <button id="increment">+</button>
+         <button id="decrement">-</button>
+         <button id="reset">reset</button>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
