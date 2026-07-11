@@ -1,10 +1,12 @@
-
+import Practice from "./Practice"
 
 function App() {
- 
 
   return (
-    <h1> Hello world with React </h1>
+    <>
+    
+    <Practice/>
+    </>
   )
 }
 

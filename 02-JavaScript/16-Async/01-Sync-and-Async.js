@@ -161,3 +161,4 @@ async function get_datas(){
     await getData(3)
 }
 get_datas()
+
