@@ -1,21 +1,13 @@
 
 function Practice (){
-    let name = "Alisha "
-    let age = 23
-    let role = "Frontend Developer"
-    return(
+    return (
         <>
-        <h1>{name}</h1>
-        <h2>{age}</h2>
-        <p>{role}</p>
-        <label htmlFor="email">Email :</label>
-        <input type="email" />
-
-        <div>
-            Learning React😍
-        </div>
+        <img src="https://react.dev/images/docs/scientists/MK3eW3As.jpg"
+      alt="Katherine Johnson" />
         </>
     )
+    
+
 }
 
 export default Practice
