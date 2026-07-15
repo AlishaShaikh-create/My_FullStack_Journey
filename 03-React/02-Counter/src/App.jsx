@@ -5,14 +5,20 @@ function App() {
   let [counter, setCounter] = useState(0);
   const increment = () => {
     setCounter((prev) =>{
-         return prev+ 1
+         if(prev == 20){
+            return prev
+         }
+         return prev + 1
     })
   };
 
    const decrement = () => {
    
     setCounter((prev) =>{
-        return prev-1
+        if(prev == 0){
+            return prev
+        }
+        return prev - 1
     })
   };
   return (
