@@ -1,55 +1,20 @@
-import UserCart from "./UserCart"
-import MovieCart from "./MovieCart"
+import BooksCard from "./BooksCard"
 function App() {
-[
-  {
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "price": 14.99,
-    "tags": ["classic", "fiction", "historical", "coming-of-age"]
-  },
-  {
-    "title": "1984",
-    "author": "George Orwell",
-    "price": 12.49,
-    "tags": ["dystopian", "fiction", "political", "classic"]
-  },
-  {
-    "title": "The Great Gatsby",
-    "author": "F. Scott Fitzgerald",
-    "price": 10.99,
-    "tags": ["classic", "fiction", "american", "novel"]
-  },
-  {
-    "title": "Pride and Prejudice",
-    "author": "Jane Austen",
-    "price": 11.99,
-    "tags": ["romance", "classic", "fiction", "literature"]
-  },
-  {
-    "title": "The Hobbit",
-    "author": "J.R.R. Tolkien",
-    "price": 16.99,
-    "tags": ["fantasy", "adventure", "fiction", "classic"]
-  }
-]
+
+   const products = [
+    { id: 1, name: "Laptop", price: 800 },
+    { id: 2, name: "Phone", price: 500 },
+    { id: 3, name: "Headphones", price: 100 },
+  ];
+
+
    return(
     <>
-    <UserCart 
-    name ="Alisha"
-    age ={23}
-    city="Hyderabad"/>
-
-
-    <MovieCart
-    title ="One Piece"
-    rating ={5}
-    isHit={true}
-    />
-
-    
-
-
+     {
+      products.map((product)=>{
+         return <BooksCard key ={product.id} product ={product}/>
+      })
+     }
     </>
    )
 }
