@@ -1,20 +1,17 @@
-import BooksCard from "./BooksCard"
+import StudentCard from "./StudentCard";
+
 function App() {
 
-   const products = [
-    { id: 1, name: "Laptop", price: 800 },
-    { id: 2, name: "Phone", price: 500 },
-    { id: 3, name: "Headphones", price: 100 },
-  ];
+const students = [
+  { id: 1, name: "Rahul", course: "React" },
+  { id: 2, name: "Priya", course: "Node.js" },
+  { id: 3, name: "Aman", course: "MongoDB" },
+];
 
 
    return(
     <>
-     {
-      products.map((product)=>{
-         return <BooksCard key ={product.id} product ={product}/>
-      })
-     }
+     <StudentCard/>
     </>
    )
 }
