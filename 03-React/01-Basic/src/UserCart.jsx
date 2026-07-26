@@ -1,11 +1,14 @@
-function UserCart({name ,age ,city}) {
-  return(
+function UserCart() {
+   const notification = true
+   return(
     <>
-    <h1>Name :{name}</h1>
-    <p> age :{age}</p>
-    <p>City :{city}</p>
+      {
+        notification && <h1> You have a new message</h1>
+      }
     </>
-  )
+   )
+
+ 
 }
 
 export default UserCart;

@@ -1,4 +1,5 @@
 import StudentCard from "./StudentCard";
+import UserCart from "./UserCart";
 
 function App() {
 
@@ -11,7 +12,7 @@ const students = [
 
    return(
     <>
-     <StudentCard/>
+    <UserCart/>
     </>
    )
 }
