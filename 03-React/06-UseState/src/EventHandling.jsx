@@ -17,22 +17,79 @@ import { useState } from "react"
 
 // onChange :-
 
-function EventHandling(){
-    const[name,setName] = useState("")
-    function handleChange(event){
+// function EventHandling(){
+//     const[name,setName] = useState("")
+//     function handleChange(event){
         
-        setName(event.target.value)
+//         setName(event.target.value)
+//     }
+//     return(
+//         <>
+//         <form >
+//             <input onChange={handleChange} value={name} placeholder="enter the name" />
+//             <h1>Name = {name}</h1>
+//             <button type="submit">Click me</button>
+//         </form>
+        
+        
+//         </>
+//     )
+// }
+// export default EventHandling
+
+
+// # onSubmit
+function EventHandling(){
+    const [name , setName] = useState("");
+    const[email , setEmail] = useState("")
+    const[submitName , setSubmitName] = useState("")
+    const[submitEmail , setSubmitEmail] = useState("")
+
+
+    function handleSubmit(event){
+         event.preventDefault()
+         console.log("Form Submittted")
+         setSubmitEmail(email)
+         setSubmitName(name)
     }
+
+
+    function handleChangeName(event){
+        setName(event.target.value)
+        
+    }
+
+    function handleChangeEmail(event){
+        setEmail(event.target.value)
+        
+    }
+
+
     return(
         <>
-        <form >
-            <input onChange={handleChange} value={name} placeholder="enter the name" />
-            <h1>Name = {name}</h1>
-            <button type="submit">Click me</button>
+        <form onSubmit={handleSubmit}>
+
+            <label htmlFor="name">Name</label>
+            <input type="text" placeholder="Enter name" id="name" onChange={handleChangeName} value={name}/>
+
+            <br />
+
+            <label htmlFor="email">Email</label>
+            <input type="email" placeholder="Enter Email" id="email" onChange={handleChangeEmail} value ={email}/>
+
+              <br />
+            <button type="submit">Submit</button>
+
         </form>
-        
-        
+
+        <h1>After Submitting</h1>
+        <p>Name : {submitName}</p>
+        <p>Email : {submitEmail}</p>
         </>
     )
 }
-export default EventHandling
+
+
+
+
+export default EventHandling 
