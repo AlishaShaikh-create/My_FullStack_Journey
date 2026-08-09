@@ -1,4 +1,5 @@
 import { useState } from "react";
+import EventHandling from "./EventHandling";
 
 function App() {
   const[name,setName] = useState("Alisha")
@@ -8,13 +9,18 @@ function App() {
 
   return (
     <>
-      <h1>{name}</h1>
+      {/* <h1>{name}</h1>
       
       <h1>{age}</h1>
      
       <button onClick={()=>{
         setName("tohid")
-      }}> Click me</button>    
+      }}> Click me</button>     */}
+
+      <EventHandling/>
+
+
+
     </>
   );
 }
