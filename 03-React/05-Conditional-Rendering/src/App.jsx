@@ -1,4 +1,5 @@
 import ConditionalRendering from "./ConditionalRendering"
+import Condition from "./Condition"
 
 
 
@@ -7,7 +8,7 @@ function App() {
 
   return (
    <>
-   <ConditionalRendering/>
+   <Condition/>
    </>
   )
 }
