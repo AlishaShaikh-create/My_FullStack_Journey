@@ -1,6 +1,6 @@
 import { useState } from "react";
 import EventHandling from "./EventHandling";
-
+import Arrays from "./Arrays";
 function App() {
   const[name,setName] = useState("Alisha")
   const[age,setAge] = useState(23)
@@ -17,7 +17,7 @@ function App() {
         setName("tohid")
       }}> Click me</button>     */}
 
-      <EventHandling/>
+      <Arrays/>
 
 
 
