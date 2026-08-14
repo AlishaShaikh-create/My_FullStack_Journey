@@ -1,15 +1,32 @@
-import Practice from "./Practice"
+import Basic from "./Basic";
 
+import Props from "./Props";
 
 function App() {
-  let isLoggedIn = false;
-  let age =17
+  let employee = {
+        name : "Alisha",
+        company_name : "dan_musa",
+        origin : 1980
+    }
+  let colors = ["red" , "green","blue"]  
   return(
   <>
-    {
-      age >=18 ?<h1>You can Vote</h1> : <h1>First become old enough to vote</h1> }
+ {/* Props in the react */}
+  {/* <Props 
+  text = "Login"
+  employee_details = {employee}
+  colors = {colors}
+  />
+
+ <Props>
+  <h1>this is h1 element</h1>
+  <p>this is the paragraph tag</p>
+ </Props> */}
+
+ 
+
   </>
-  )
+  )   
    
 }
 
