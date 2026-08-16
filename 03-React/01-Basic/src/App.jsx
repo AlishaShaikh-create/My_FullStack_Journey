@@ -8,6 +8,7 @@ import ConditionalRendering from "./ConditionalRendering";
 
 import Counter from "./Counter";
 import UpdatingObjects from "./UpdatingObjects";
+import UpdatingArrays from "./UpdatingArrays";
 
 function App() {
   let employee = {
@@ -18,7 +19,7 @@ function App() {
   let colors = ["red" , "green","blue"]  
   return(
   <>
-   <UpdatingObjects/>
+  <UpdatingArrays/>
   </>
   )   
    
