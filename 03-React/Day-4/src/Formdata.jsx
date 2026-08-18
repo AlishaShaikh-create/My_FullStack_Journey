@@ -6,28 +6,34 @@ function Formdata(){
         password:""
     })
 
-    function handleChange(event){
-        if(event.target.name === "name"){
-            setFormData((prev)=>({
-                ...prev,
-                name : event.target.value
-            }))
-        }
-        if(event.target.name === "email"){
-            setFormData((prev)=>({
-                ...prev,
-                email : event.target.value
-            }))
-        }
-        if(event.target.name === "password"){
-            setFormData((prev)=>({
-                ...prev,
-                password : event.target.value
-            }))
-        }
+    // function handleChange(event){
+    //     if(event.target.name === "name"){
+    //         setFormData((prev)=>({
+    //             ...prev,
+    //             name : event.target.value
+    //         }))
+    //     }
+    //     if(event.target.name === "email"){
+    //         setFormData((prev)=>({
+    //             ...prev,
+    //             email : event.target.value
+    //         }))
+    //     }
+    //     if(event.target.name === "password"){
+    //         setFormData((prev)=>({
+    //             ...prev,
+    //             password : event.target.value
+    //         }))
+    //     }
         
-       
+    function handleChange(event){
+        const {name , value } = event.target 
+        setFormData((prev)=>({
+            ...prev , 
+            [name] : value 
+        }))
     }
+    
 
     return(
         <>
