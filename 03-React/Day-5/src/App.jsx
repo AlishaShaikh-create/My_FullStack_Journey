@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Use_Effect from './Use_Effect'
+import Timer from './Timer'
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <>
-    <Use_Effect/>
+    <Timer/>
     </>
   )
 }
